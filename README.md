@@ -15,18 +15,13 @@ Channel status and changes are performed using a different protocol that isn't d
 The tool here will do the initial pairing. The credentials can then be used in a standard way
 (digest) in other tools.
 
+Cheynespc EDIT Below
+
 
 OK Everyone after hours and hours and hours of learning,
 
 I have successfully used this post to connect my Philips TV (Model: 43PUT6801/79 Man: June 2017) to my Home Assistant installation.
 
-Frontend
-
-4
-
-Source Select
-
-22.png1048x760 52.6 KB
 Achieved Results
 With this custom component I am able to connect the TV via a network connection, and am able to view what station it is on and what channel it is, I can also control the volume and power on/off on the TV as well as change the channel source to any other live TV station.
 
@@ -37,6 +32,7 @@ My System
 My current setup is a Raspberry Pi 3B running Hassio and Home assistant (HA) version 0.78 at the time of writing this.
 
 Steps and Sources of Information:
+
 I was interested in having my Philips TV communicate with Home Assistant.
 
 This was a exciting feature as my current setup has xBox One, ps4, and kodi- libreelec media players sending what is playing to HA. The only device I had one way communication with was the Philips TV, as I was using an IR blaster to control this. Using a "Broadlink IR RM3 mini" and using this home assistant component. Using this I was able to control the TV as if I was using a remote control. However this was not telling my media player to current state of the TV which all other media devices were able to do. There had to be a solution.
@@ -71,7 +67,7 @@ The Pairing Script
 The script by Suborb on github philips.py from post 1 gives the access to retrieve TV credentials from the Philips TV.
 
 Clone git the script to the Linux system ( see here for detailed info about git clone ).
-git clone https://github.com/mveken/home_assistant.git
+git clone https://github.com/cheynespc/home_assistant.git
 
 Change the directory to philips_android_tv
 cd philips_android_tv
